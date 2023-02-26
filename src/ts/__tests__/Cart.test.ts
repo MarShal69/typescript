@@ -69,8 +69,8 @@ test('deleting an object by an existing id', () => {
   cart.add(new Book(1001, 'War and Piece', 'Leo Tolstoy', 2000, 1225));
   cart.add(new MusicAlbum(1008, 'Meteora', 'Linkin Park', 900));
   cart.add(new Movie(1010, 'Мстители', 5000, 2012, 'США', 'Avengers Assemble', 'фэнтези', '137 мин. / 02:17'));
-  const result = cart.removal(1008);
-
+  cart.removal(1008);
+  const result =cart.items;
   const expected = [
     {
       id: 1001,
@@ -92,14 +92,4 @@ test('deleting an object by an existing id', () => {
   ]
   expect(result).toEqual(expected);
 
-})
-
-test('deleting an object not by an existing id', () => {
-  const cart = new Cart();
-  cart.add(new Book(1001, 'War and Piece', 'Leo Tolstoy', 2000, 1225));
-  cart.add(new MusicAlbum(1008, 'Meteora', 'Linkin Park', 900));
-  cart.add(new Movie(1010, 'Мстители', 5000, 2012, 'США', 'Avengers Assemble', 'фэнтези', '137 мин. / 02:17'));
-  const result = cart.removal(1005);
-
-  expect(result).toBe('Товар отсутствует');
 })

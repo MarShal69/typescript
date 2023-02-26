@@ -12,9 +12,11 @@ cart.add(new Movie(1010, 'Мстители', 5000, 2012, 'США', 'Avengers Ass
 
 
 // console.log(cart.items);
-// console.log(cart);
 // console.log(cart.items.length);
+
 // console.log (cart.amount());
 // console.log(cart.amountDiscount(10));
-// console.log(cart.removal(1008));
-// console.log(cart.removal(1005))
+
+// cart.removal(1008);
+// console.log(cart.items);
+// console.log(cart.items.length);

@@ -20,13 +20,7 @@ export default class Cart {
         return amount - amount * (discount / 100);
     }
 
-    removal(id: number): Buyable[] | string {
-        // let index: number = this._items.findIndex((item) => item.id === id);
-        if (this._items.findIndex((item) => item.id === id) !== -1) {
-            this._items.splice(this._items.findIndex((item) => item.id === id), 1);
-            return this._items;
-        } else {
-            return 'Товар отсутствует'
-        }
+    removal(id: number): void {
+        this._items.splice(this._items.findIndex((item) => item.id === id), 1);
     }
 }
