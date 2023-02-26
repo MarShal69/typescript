@@ -1,3 +1,6 @@
+# SI Test demo
+[![Build status](https://ci.appveyor.com/api/projects/status/ietwsir4uirbn6bp?svg=true)](https://ci.appveyor.com/project/MarShal69/typescript)
+
 # Домашнее задание к лекции «TypeScript»
 
 ### **Важные моменты** 
